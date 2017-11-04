@@ -1,0 +1,420 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+    ========================================================================== */
+  
+  /*Base css*/
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700i,900" rel="stylesheet">
+
+		
+  .alignleft{
+	  float:left;
+	  margin-right:15px;
+  }
+  .alignright{
+	  float:right;
+	  margin-left:15px;
+  }
+  .aligncenter{
+	  display:block;
+	  margin:0 auto 15px;
+  }
+  a:focus,input:focus,textarea:focus,button:focus{
+	  outline:0 solid
+  }
+  img{
+	  max-width:100%
+	  height:auto;
+  }
+   
+   h1,h2,h3,h4,h5,h6{
+	margin:0 0 15px;
+	font-weight:bold;
+	margin:0 0 15px;
+	
+    
+}
+h1 {
+	color: #313131; 
+}
+
+body{
+   
+    font-family: 'Roboto', sans-serif;
+    background: #f5f6fa;
+   
+	
+}
+
+a:hover{text-decoration:none;}
+.promo-boxes-wrap {
+	margin-left: -15px;
+    overflow: hidden;
+}
+.single-promo-box {
+	height: 350px;
+	width: 50%;
+	float: left;
+    display: table;
+    text-align: center;
+}
+.promo-box-tablecell {
+	display: table-cell;
+	vertical-align: middle;
+    padding-top: 40px;
+}
+.single-promo-box:nth-child(2) {
+	background: #d8889b;
+}
+.single-promo-box:nth-child(3) {
+	background: #7dbace;
+}
+.promo-icon {
+	font-size: 70px;
+}
+.single-promo-box h2 {
+	font-size: 28px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+.boxed-btn {
+	background: #7dbace;
+	color: #fff;
+	padding: 15px 40px;
+	border-radius: 50px;
+	display: inline-block;
+}
+.single-promo-box h2:after {
+	position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    width: 50px;
+    margin-left: -25px;
+    background:#d8889b;;
+    content: '';
+    
+}
+.single-promo-box .boxed-btn {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 15px;
+    opacity: 0;
+    visibility: hidden;
+}
+.promo-box-tablecell {
+    padding-top: 45px;
+    transition: .3s;
+    
+}
+.single-promo-box:hover .promo-box-tablesell {
+    padding-top: 0;
+}
+.single-promo-box:hover .boxed-btn {
+    opacity: 1;
+    visibility: visible;
+}
+.single-promo-box{
+    background: #fff;
+}
+
+
+.section-title {
+    padding-left: 40px;
+}
+.bordered-btn {
+    background: #fff;
+	color: #000;
+	padding: 15px 40px;
+	border-radius: 50px;
+	display: inline-block;
+    margin-left: 20px;
+    border:1px solid #333;
+    
+}
+.right-side-content {
+    padding: 80px 0;
+}
+.section-title {
+	line-height: 1.7;
+	font-size: 20px;
+	
+}
+h3 {
+	font-weight: bold;
+	font-size: 44px;
+    color: #7dbace;
+}
+.section-title h4 {
+    line-height: 1.5;
+}
+.section-btns {
+	margin-top: 50px;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
